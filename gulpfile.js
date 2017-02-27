@@ -2,6 +2,7 @@ const gulp = require('gulp');
 
 gulp.task('default', () => {
 
+    console.log("default gulp task");
 });
 
-export default gulp;
+module.exports = gulp;
