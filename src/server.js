@@ -14,7 +14,7 @@ const server = app.listen(listenOn, () => {
     let addr = server.address();
     if (typeof addr === "string"){
         //likely UNIX port. update permissions
-        fs.chmodSync(listenOn, 766);
+        fs.chmodSync(listenOn, '766');
     }else{
         addr = `http://${addr.address}:${addr.port}`;
     }
